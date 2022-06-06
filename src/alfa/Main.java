@@ -17,8 +17,6 @@ public class Main {
         System.out.println("Choose your language : Java, C, PHP, Python or JavaScript");
         String choice = scan.nextLine();
 
-        System.out.println("What do you think you're better at? Syntax/Usage/Speed/Security/Simplicity");
-
         if (choice.equalsIgnoreCase("Java")) {
             OpponentRandomizer.RandomizeOpponentJava();
         } else if (choice.equalsIgnoreCase("C")) {
@@ -33,6 +31,7 @@ public class Main {
             throw new Exception("There is no such option!");
         }
 
+        System.out.println("What do you think you're better at? Syntax/Usage/Speed/Security/Simplicity");
         String arg = scan.nextLine();
     }
 }
