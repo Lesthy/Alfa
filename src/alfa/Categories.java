@@ -1,3 +1,5 @@
+package src.alfa;
+
 public class Categories {
         // How many characters does it use to print out "Hello World"?
         int simplicity;

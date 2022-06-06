@@ -1,3 +1,5 @@
+package src.alfa;
+
 public class PHP extends Categories{
     int safest = 2;
     int usage = 1;

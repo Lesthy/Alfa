@@ -1,3 +1,5 @@
+package src.alfa;
+
 public class Python extends Categories{
     int safest = 5;
     int usage = 5;
