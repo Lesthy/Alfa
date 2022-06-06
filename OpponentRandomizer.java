@@ -19,4 +19,77 @@ public class OpponentRandomizer {
                 break;
         }
     }
+
+    public static void RandomizeOpponentC() {
+        Random opp = new Random();
+        int opponentC = opp.nextInt(3);
+        switch (opponentC) {
+            case 0:
+                System.out.println("Your opponent is Java");
+                break;
+            case 1:
+                System.out.println("Your opponent is PHP");
+                break;
+            case 2:
+                System.out.println("Your opponent is Python");
+                break;
+            case 3:
+                System.out.println("Your opponent is JavaScript");
+                break;
+        }
+    }
+    public static void RandomizeOpponentPHP() {
+        Random opp = new Random();
+        int opponentC = opp.nextInt(3);
+        switch (opponentC) {
+            case 0:
+                System.out.println("Your opponent is Java");
+                break;
+            case 1:
+                System.out.println("Your opponent is C");
+                break;
+            case 2:
+                System.out.println("Your opponent is Python");
+                break;
+            case 3:
+                System.out.println("Your opponent is JavaScript");
+                break;
+        }
+    }
+    public static void RandomizeOpponentPython() {
+        Random opp = new Random();
+        int opponentC = opp.nextInt(3);
+        switch (opponentC) {
+            case 0:
+                System.out.println("Your opponent is Java");
+                break;
+            case 1:
+                System.out.println("Your opponent is PHP");
+                break;
+            case 2:
+                System.out.println("Your opponent is C");
+                break;
+            case 3:
+                System.out.println("Your opponent is JavaScript");
+                break;
+        }
+    }
+    public static void RandomizeOpponentJavaScript() {
+        Random opp = new Random();
+        int opponentC = opp.nextInt(3);
+        switch (opponentC) {
+            case 0:
+                System.out.println("Your opponent is Java");
+                break;
+            case 1:
+                System.out.println("Your opponent is PHP");
+                break;
+            case 2:
+                System.out.println("Your opponent is Python");
+                break;
+            case 3:
+                System.out.println("Your opponent is C");
+                break;
+        }
+    }
 }
