@@ -1,7 +1,7 @@
 public class JavaScript extends Categories{
-    safest = 4;
-    usage = 2;
-    simplicity = 4;
-    easiest = 5;
-    fastest = 4;
+    int safest = 4;
+    int usage = 2;
+    int simplicity = 4;
+    int easiest = 5;
+    int fastest = 4;
 }
