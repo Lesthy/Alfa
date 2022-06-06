@@ -1,4 +1,4 @@
-package src.alfa;
+package alfa;
 
 public class JavaScript extends ProgrammingLanguages {
     int safest = 4;

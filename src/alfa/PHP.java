@@ -1,4 +1,4 @@
-package src.alfa;
+package alfa;
 
 public class PHP extends ProgrammingLanguages {
     int safest = 2;

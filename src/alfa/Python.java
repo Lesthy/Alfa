@@ -1,4 +1,4 @@
-package src.alfa;
+package alfa;
 
 public class Python extends ProgrammingLanguages {
     int safest = 5;

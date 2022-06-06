@@ -1,4 +1,4 @@
-package src.alfa;
+package alfa;
 
 public class Java extends ProgrammingLanguages {
         int safest = 3;

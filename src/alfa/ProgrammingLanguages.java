@@ -1,4 +1,4 @@
-package src.alfa;
+package alfa;
 
 public class ProgrammingLanguages {
         // How many characters does it use to print out "Hello World"?

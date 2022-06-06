@@ -1,4 +1,4 @@
-package src.alfa;
+package alfa;
 
 public class C extends ProgrammingLanguages {
     int safest = 1;
