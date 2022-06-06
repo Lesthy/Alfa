@@ -1,7 +1,7 @@
 # Alfa
 ## Used resources:
 
-**__Which programming language is the most secure?__**;
+**__Which programming language is the most secure?__**
 - https://portswigger.net/daily-swig/c-is-least-secure-programming-language-study-claims;
 
 **__Which is the fastest programming language?__**
