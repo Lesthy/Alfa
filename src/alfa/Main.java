@@ -14,26 +14,26 @@ public class Main {
 
         System.out.println("Language Battle");
         System.out.println(" ");
-        System.out.println("Choose your language : src.alfa.Java, src.alfa.C, src.alfa.PHP, src.alfa.Python or src.alfa.JavaScript");
+        System.out.println("Choose your language : Java, C, PHP, Python or JavaScript");
         String choice = scan.nextLine();
 
-        if (choice.equalsIgnoreCase("src.alfa.Java")) {
+        if (choice.equalsIgnoreCase("Java")) {
             OpponentRandomizer.RandomizeOpponentJava();
             System.out.println("What do you think you're better at? Syntax/Usage/Speed/Security/Simplicity");
             String arg = scan.nextLine();
-        } else if (choice.equalsIgnoreCase("src.alfa.C")) {
+        } else if (choice.equalsIgnoreCase("C")) {
             OpponentRandomizer.RandomizeOpponentC();
             System.out.println("What do you think you're better at? Syntax/Usage/Speed/Security/Simplicity");
             String arg = scan.nextLine();
-        } else if (choice.equalsIgnoreCase("src.alfa.PHP")) {
+        } else if (choice.equalsIgnoreCase("PHP")) {
             OpponentRandomizer.RandomizeOpponentPHP();
             System.out.println("What do you think you're better at? Syntax/Usage/Speed/Security/Simplicity");
             String arg = scan.nextLine();
-        } else if (choice.equalsIgnoreCase("src.alfa.Python")) {
+        } else if (choice.equalsIgnoreCase("Python")) {
             OpponentRandomizer.RandomizeOpponentPython();
             System.out.println("What do you think you're better at? Syntax/Usage/Speed/Security/Simplicity");
             String arg = scan.nextLine();
-        }  else if (choice.equalsIgnoreCase("src.alfa.JavaScript")) {
+        }  else if (choice.equalsIgnoreCase("JavaScript")) {
             OpponentRandomizer.RandomizeOpponentJavaScript();
             System.out.println("What do you think you're better at? Syntax/Usage/Speed/Security/Simplicity");
             String arg = scan.nextLine();
