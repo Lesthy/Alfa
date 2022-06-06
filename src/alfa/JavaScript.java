@@ -1,3 +1,5 @@
+package src.alfa;
+
 public class JavaScript extends Categories{
     int safest = 4;
     int usage = 2;

@@ -1,3 +1,5 @@
+package src.alfa;
+
 public class Java extends Categories{
         int safest = 3;
         int usage = 3;

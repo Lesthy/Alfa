@@ -1,3 +1,5 @@
+package src.alfa;
+
 public class C extends Categories{
     int safest = 1;
     int usage = 4;
