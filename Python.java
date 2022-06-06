@@ -1,7 +1,7 @@
 public class Python extends Categories{
-    safest = 5;
-    usage = 5;
-    simplicity = 5;
-    fastest = 2;
-    easiest = 4;
+    int safest = 5;
+    int usage = 5;
+    int simplicity = 5;
+    int fastest = 2;
+    int easiest = 4;
 }
