@@ -1,7 +1,7 @@
 public class PHP extends Categories{
-    safest = 2
-    usage = 1
-    simplicity = 3;
-    easiest = 1;
-    fastest = 1;
+    int safest = 2;
+    int usage = 1;
+    int simplicity = 3;
+    int easiest = 1;
+    int fastest = 1;
 }
