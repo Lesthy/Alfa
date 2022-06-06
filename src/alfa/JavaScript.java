@@ -1,6 +1,6 @@
-package src.alfa;
+package alfa;
 
-public class JavaScript extends Categories{
+public class JavaScript extends ProgrammingLanguages {
     int safest = 4;
     int usage = 2;
     int simplicity = 4;

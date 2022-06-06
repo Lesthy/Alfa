@@ -1,6 +1,6 @@
-package src.alfa;
+package alfa;
 
-public class PHP extends Categories{
+public class PHP extends ProgrammingLanguages {
     int safest = 2;
     int usage = 1;
     int simplicity = 3;

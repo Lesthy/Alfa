@@ -1,6 +1,6 @@
-package src.alfa;
+package alfa;
 
-public class C extends Categories{
+public class C extends ProgrammingLanguages {
     int safest = 1;
     int usage = 4;
     int simplicity = 2;

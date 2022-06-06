@@ -1,4 +1,4 @@
-package src.alfa;
+package alfa;
 
 import java.util.Random;
 

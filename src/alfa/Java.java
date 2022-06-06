@@ -1,6 +1,6 @@
-package src.alfa;
+package alfa;
 
-public class Java extends Categories{
+public class Java extends ProgrammingLanguages {
         int safest = 3;
         int usage = 3;
         int simplicity = 1;
