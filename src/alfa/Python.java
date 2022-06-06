@@ -1,6 +1,6 @@
 package src.alfa;
 
-public class Python extends Categories{
+public class Python extends ProgrammingLanguages {
     int safest = 5;
     int usage = 5;
     int simplicity = 5;
