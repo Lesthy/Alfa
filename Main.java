@@ -20,6 +20,7 @@ public class Main {
             OpponentRandomizer.RandomizeOpponentJava();
             System.out.println("What do you think you're better at? Syntax/Usage/Speed/Security/Simplicity");
             String arg = scan.nextLine();
+
         }
 
 
