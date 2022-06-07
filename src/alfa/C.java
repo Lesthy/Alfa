@@ -1,14 +1,34 @@
-package src.alfa;
+package alfa;
 
-public class C extends alfa.ProgrammingLanguages {
-    int safest = 1;
+public class C extends ProgrammingLanguages {
+    int security = 1;
     int usage = 4;
+    int syntax = 2;
+    int speed = 5;
     int simplicity = 2;
-    int fastest = 5;
-    int easiest = 2;
-    public static int[] cCompare(){
-        int[] c = {1,4,2,5,2};
-        return c;
+
+    @Override
+    public int getSecurity() {
+        return security;
     }
 
+    @Override
+    public int getUsage() {
+        return usage;
+    }
+
+    @Override
+    public int getSyntax() {
+        return syntax;
+    }
+
+    @Override
+    public int getSpeed() {
+        return speed;
+    }
+
+    @Override
+    public int getSimplicity() {
+        return simplicity;
+    }
 }

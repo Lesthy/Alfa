@@ -1,14 +1,34 @@
-package src.alfa;
+package alfa;
 
-public class Java extends alfa.ProgrammingLanguages {
-        int safest = 3;
-        int usage = 3;
-        int simplicity = 1;
-        int fastest = 3;
-        int easiest = 3;
-        public static int[] javaCompare(){
-                int[] javaCompare = {1,3,3,3,3};
-                return javaCompare;
-        }
+public class Java extends ProgrammingLanguages {
+    private int security = 3;
+    private int usage = 3;
+    private int syntax = 1;
+    private int speed = 3;
+    private int simplicity = 3;
 
+    @Override
+    public int getSecurity() {
+        return security;
     }
+
+    @Override
+    public int getUsage() {
+        return usage;
+    }
+
+    @Override
+    public int getSyntax() {
+        return syntax;
+    }
+
+    @Override
+    public int getSpeed() {
+        return speed;
+    }
+
+    @Override
+    public int getSimplicity() {
+        return simplicity;
+    }
+}

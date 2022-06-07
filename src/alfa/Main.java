@@ -1,17 +1,14 @@
-package src.alfa;
+package alfa;
 
-import src.alfa.BattleChoice;
-
-import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        src.alfa.Java java = new src.alfa.Java();
-        src.alfa.C c = new src.alfa.C();
-        alfa.PHP php = new alfa.PHP();
-        src.alfa.Python python = new src.alfa.Python();
-        src.alfa.JavaScript javaScript = new src.alfa.JavaScript();
+
+        ProgrammingLanguages hero;
+
+        ProgrammingLanguages enemy;
+
         Scanner scan = new Scanner(System.in);
 
 
@@ -21,28 +18,60 @@ public class Main {
         String choice = scan.nextLine();
 
         if (choice.equalsIgnoreCase("Java")) {
-            System.out.println("Your opponent is " + OpponentRandomizer.RandomizeOpponentJava());
-            System.out.println("What do you think you're better at? Syntax/Usage/Speed/Security/Simplicity");
-            BattleChoice.ChoiceToBattleJava();
+            hero = new Java();
+            enemy = OpponentRandomizer.RandomizeOpponentJava();
         } else if (choice.equalsIgnoreCase("C")) {
-            System.out.println("Your opponent is " + OpponentRandomizer.RandomizeOpponentC());
-            System.out.println("What do you think you're better at? Syntax/Usage/Speed/Security/Simplicity");
-            BattleChoice.ChoiceToBattleC();
+            hero = new C();
+            enemy = OpponentRandomizer.RandomizeOpponentC();
         } else if (choice.equalsIgnoreCase("PHP")) {
-            System.out.println("Your opponent is " + OpponentRandomizer.RandomizeOpponentPHP());
-            System.out.println("What do you think you're better at? Syntax/Usage/Speed/Security/Simplicity");
-            BattleChoice.ChoiceToBattlePHP();
+            hero = new PHP();
+            enemy = OpponentRandomizer.RandomizeOpponentPHP();
         } else if (choice.equalsIgnoreCase("Python")) {
-            System.out.println("Your opponent is " + OpponentRandomizer.RandomizeOpponentPy());
-            System.out.println("What do you think you're better at? Syntax/Usage/Speed/Security/Simplicity");
-            BattleChoice.ChoiceToBattlePy();
-        }  else if (choice.equalsIgnoreCase("JavaScript")) {
-            System.out.println("Your opponent is " + OpponentRandomizer.RandomizeOpponentJS());
-            System.out.println("What do you think you're better at? Syntax/Usage/Speed/Security/Simplicity");
-            BattleChoice.ChoiceToBattleJS();
+            hero = new Python();
+            enemy = OpponentRandomizer.RandomizeOpponentPython();
+        } else if (choice.equalsIgnoreCase("JavaScript")) {
+            hero = new JavaScript();
+            enemy = OpponentRandomizer.RandomizeOpponentJavaScript();
         } else {
             throw new Exception("There is no such option!");
         }
 
+        System.out.println("What do you want to compete with: Syntax/Usage/Speed/Simplicity/Security");
+        String arg = scan.nextLine();
+
+
+        if (arg.equalsIgnoreCase("Syntax")) {
+            if (hero.getSyntax() > enemy.getSyntax()) {
+                System.out.println("You won, congratulations!");
+            } else {
+                System.out.println("Sorry, You lost!");
+            }
+        } else if (arg.equalsIgnoreCase("Usage")) {
+            if (hero.getUsage() > enemy.getUsage()) {
+                System.out.println("You won, congratulations!");
+            } else {
+                System.out.println("Sorry, You lost!");
+            }
+        } else if (arg.equalsIgnoreCase("Speed")) {
+            if (hero.getSpeed() > enemy.getSpeed()) {
+                System.out.println("You won, congratulations!");
+            } else {
+                System.out.println("Sorry, You lost!");
+            }
+        } else if (arg.equalsIgnoreCase("Simplicity")) {
+            if (hero.getSimplicity() > enemy.getSimplicity()) {
+                System.out.println("You won, congratulations!");
+            } else {
+                System.out.println("Sorry, You lost!");
+            }
+        } else if (arg.equalsIgnoreCase("Security")) {
+            if (hero.getSecurity() > enemy.getSecurity()) {
+                System.out.println("You won, congratulations!");
+            } else {
+                System.out.println("Sorry, You lost!");
+            }
+        } else {
+            throw new Exception("There is no such option!");
+        }
     }
 }
