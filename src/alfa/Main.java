@@ -25,17 +25,21 @@ public class Main {
             System.out.println("What do you think you're better at? Syntax/Usage/Speed/Security/Simplicity");
             BattleChoice.ChoiceToBattleJava();
         } else if (choice.equalsIgnoreCase("C")) {
-            src.alfa.OpponentRandomizer.RandomizeOpponentC();
+            System.out.println("Your opponent is " + OpponentRandomizer.RandomizeOpponentC());
             System.out.println("What do you think you're better at? Syntax/Usage/Speed/Security/Simplicity");
+            BattleChoice.ChoiceToBattleC();
         } else if (choice.equalsIgnoreCase("PHP")) {
-            src.alfa.OpponentRandomizer.RandomizeOpponentPHP();
+            System.out.println("Your opponent is " + OpponentRandomizer.RandomizeOpponentPHP());
             System.out.println("What do you think you're better at? Syntax/Usage/Speed/Security/Simplicity");
+            BattleChoice.ChoiceToBattlePHP();
         } else if (choice.equalsIgnoreCase("Python")) {
-            src.alfa.OpponentRandomizer.RandomizeOpponentPython();
+            System.out.println("Your opponent is " + OpponentRandomizer.RandomizeOpponentPy());
             System.out.println("What do you think you're better at? Syntax/Usage/Speed/Security/Simplicity");
+            BattleChoice.ChoiceToBattlePy();
         }  else if (choice.equalsIgnoreCase("JavaScript")) {
-            src.alfa.OpponentRandomizer.RandomizeOpponentJavaScript();
+            System.out.println("Your opponent is " + OpponentRandomizer.RandomizeOpponentJS());
             System.out.println("What do you think you're better at? Syntax/Usage/Speed/Security/Simplicity");
+            BattleChoice.ChoiceToBattleJS();
         } else {
             throw new Exception("There is no such option!");
         }

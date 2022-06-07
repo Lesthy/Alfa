@@ -8,12 +8,12 @@ public class OpponentRandomizer {
     alfa.PHP php = new alfa.PHP();
     src.alfa.Python python = new src.alfa.Python();
     src.alfa.JavaScript javaScript = new src.alfa.JavaScript();
-    public static int getRandom(){
+    public static int getRandomJava(){
         Random opp = new Random();
         int opponentJava = opp.nextInt(3);
         return opponentJava;
     }
-    public static int oppon = getRandom();
+    public static int oppon = getRandomJava();
 
     public static String RandomizeOpponentJava() {
         String opponentJavaString = "test";
@@ -36,78 +36,116 @@ public class OpponentRandomizer {
         return opponentJavaString;
     }
 
+    public static int getRandomC(){
+        Random opp = new Random();
+        int opponentC = opp.nextInt(3);
+        return opponentC;
+    }
+    public static int opC = getRandomC();
 
 
-    public static void RandomizeOpponentC() {
-        Random opp = new Random();
-        int opponentC = opp.nextInt(3);
-        switch (opponentC) {
+    public static String RandomizeOpponentC() {
+        String opponentCString = "test";
+
+
+        switch (opC) {
             case 0:
-                System.out.println("Your opponent is Java");
+                opponentCString = "Java";
                 break;
             case 1:
-                System.out.println("Your opponent is PHP");
+                opponentCString = "PHP";
                 break;
             case 2:
-                System.out.println("Your opponent is Python");
+                opponentCString = "Python";
                 break;
             case 3:
-                System.out.println("Your opponent is JavaScript");
+                opponentCString = "JavaScript";
                 break;
         }
+        return opponentCString;
     }
-    public static void RandomizeOpponentPHP() {
+    public static int getRandomPHP(){
         Random opp = new Random();
-        int opponentC = opp.nextInt(3);
-        switch (opponentC) {
-            case 0:
-                System.out.println("Your opponent is Java");
-                break;
-            case 1:
-                System.out.println("Your opponent is C");
-                break;
-            case 2:
-                System.out.println("Your opponent is Python");
-                break;
-            case 3:
-                System.out.println("Your opponent is JavaScript");
-                break;
-        }
+        int opponentPHP = opp.nextInt(3);
+        return opponentPHP;
     }
-    public static void RandomizeOpponentPython() {
-        Random opp = new Random();
-        int opponentC = opp.nextInt(3);
-        switch (opponentC) {
+    public static int opPHP = getRandomPHP();
+
+
+    public static String RandomizeOpponentPHP() {
+        String opponentPHPString = "test";
+
+
+        switch (opPHP) {
             case 0:
-                System.out.println("Your opponent is Java");
+                opponentPHPString = "C";
                 break;
             case 1:
-                System.out.println("Your opponent is PHP");
+                opponentPHPString = "Java";
                 break;
             case 2:
-                System.out.println("Your opponent is C");
+                opponentPHPString = "Python";
                 break;
             case 3:
-                System.out.println("Your opponent is JavaScript");
+                opponentPHPString = "JavaScript";
                 break;
         }
+        return opponentPHPString;
     }
-    public static void RandomizeOpponentJavaScript() {
+    public static int getRandomPy(){
         Random opp = new Random();
-        int opponentC = opp.nextInt(3);
-        switch (opponentC) {
+        int opponentPy = opp.nextInt(3);
+        return opponentPy;
+    }
+    public static int opPy = getRandomPy();
+
+
+    public static String RandomizeOpponentPy() {
+        String opponentPyString = "test";
+
+
+        switch (opPy) {
             case 0:
-                System.out.println("Your opponent is Java");
+                opponentPyString = "C";
                 break;
             case 1:
-                System.out.println("Your opponent is PHP");
+                opponentPyString = "PHP";
                 break;
             case 2:
-                System.out.println("Your opponent is Python");
+                opponentPyString = "Java";
                 break;
             case 3:
-                System.out.println("Your opponent is C");
+                opponentPyString = "JavaScript";
                 break;
         }
+        return opponentPyString;
+    }
+    public static int getRandomJS(){
+        Random opp = new Random();
+        int opponentJS = opp.nextInt(3);
+        return opponentJS;
+    }
+    public static int opJS = getRandomJS();
+
+
+    public static String RandomizeOpponentJS() {
+        String opponentJSString = "test";
+
+
+        switch (opJS) {
+            case 0:
+                opponentJSString = "C";
+                break;
+            case 1:
+                opponentJSString = "PHP";
+                break;
+            case 2:
+                opponentJSString = "Python";
+                break;
+            case 3:
+                opponentJSString = "Java";
+                break;
+        }
+        return opponentJSString;
     }
 }
