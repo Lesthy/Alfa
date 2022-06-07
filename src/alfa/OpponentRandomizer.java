@@ -13,13 +13,13 @@ public class OpponentRandomizer {
         int opponentJava = opp.nextInt(3);
         return opponentJava;
     }
-    public static int opponentJava;
+    public static int oppon = getRandom();
 
     public static String RandomizeOpponentJava() {
         String opponentJavaString = "test";
 
 
-        switch (opponentJava) {
+        switch (oppon) {
             case 0:
                 opponentJavaString = "C";
                 break;
