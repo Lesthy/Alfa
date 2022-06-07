@@ -1,14 +1,17 @@
-package alfa;
+package src.alfa;
 
+import src.alfa.BattleChoice;
+
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        Java java = new Java();
-        C c = new C();
-        PHP php = new PHP();
-        Python python = new Python();
-        JavaScript javaScript = new JavaScript();
+        src.alfa.Java java = new src.alfa.Java();
+        src.alfa.C c = new src.alfa.C();
+        alfa.PHP php = new alfa.PHP();
+        src.alfa.Python python = new src.alfa.Python();
+        src.alfa.JavaScript javaScript = new src.alfa.JavaScript();
         Scanner scan = new Scanner(System.in);
 
 
@@ -18,20 +21,24 @@ public class Main {
         String choice = scan.nextLine();
 
         if (choice.equalsIgnoreCase("Java")) {
-            OpponentRandomizer.RandomizeOpponentJava();
+            System.out.println("Your opponent is " + OpponentRandomizer.RandomizeOpponentJava());
+            System.out.println("What do you think you're better at? Syntax/Usage/Speed/Security/Simplicity");
+            BattleChoice.ChoiceToBattleJava();
         } else if (choice.equalsIgnoreCase("C")) {
-            OpponentRandomizer.RandomizeOpponentC();
+            src.alfa.OpponentRandomizer.RandomizeOpponentC();
+            System.out.println("What do you think you're better at? Syntax/Usage/Speed/Security/Simplicity");
         } else if (choice.equalsIgnoreCase("PHP")) {
-            OpponentRandomizer.RandomizeOpponentPHP();
+            src.alfa.OpponentRandomizer.RandomizeOpponentPHP();
+            System.out.println("What do you think you're better at? Syntax/Usage/Speed/Security/Simplicity");
         } else if (choice.equalsIgnoreCase("Python")) {
-            OpponentRandomizer.RandomizeOpponentPython();
+            src.alfa.OpponentRandomizer.RandomizeOpponentPython();
+            System.out.println("What do you think you're better at? Syntax/Usage/Speed/Security/Simplicity");
         }  else if (choice.equalsIgnoreCase("JavaScript")) {
-            OpponentRandomizer.RandomizeOpponentJavaScript();
+            src.alfa.OpponentRandomizer.RandomizeOpponentJavaScript();
+            System.out.println("What do you think you're better at? Syntax/Usage/Speed/Security/Simplicity");
         } else {
             throw new Exception("There is no such option!");
         }
 
-        System.out.println("What do you think you're better at? Syntax/Usage/Speed/Security/Simplicity");
-        String arg = scan.nextLine();
     }
 }

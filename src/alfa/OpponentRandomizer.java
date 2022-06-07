@@ -1,27 +1,42 @@
-package alfa;
+package src.alfa;
 
 import java.util.Random;
 
 public class OpponentRandomizer {
-    public static void RandomizeOpponentJava() {
+    src.alfa.Java java = new src.alfa.Java();
+    src.alfa.C c = new src.alfa.C();
+    alfa.PHP php = new alfa.PHP();
+    src.alfa.Python python = new src.alfa.Python();
+    src.alfa.JavaScript javaScript = new src.alfa.JavaScript();
+    public static int getRandom(){
         Random opp = new Random();
         int opponentJava = opp.nextInt(3);
+        return opponentJava;
+    }
+    public static int opponentJava;
+
+    public static String RandomizeOpponentJava() {
+        String opponentJavaString = "test";
+
 
         switch (opponentJava) {
             case 0:
-                System.out.println("Your opponent is C");
+                opponentJavaString = "C";
                 break;
             case 1:
-                System.out.println("Your opponent is PHP");
+                opponentJavaString = "PHP";
                 break;
             case 2:
-                System.out.println("Your opponent is Python");
+                opponentJavaString = "Python";
                 break;
             case 3:
-                System.out.println("Your opponent is JavaScript");
+                opponentJavaString = "JavaScript";
                 break;
         }
+        return opponentJavaString;
     }
+
+
 
     public static void RandomizeOpponentC() {
         Random opp = new Random();
