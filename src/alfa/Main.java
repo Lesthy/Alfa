@@ -29,7 +29,7 @@ public class Main {
         } else if (choice.equalsIgnoreCase("Python")) {
             hero = new Python();
             enemy = OpponentRandomizer.RandomizeOpponentPython();
-        }  else if (choice.equalsIgnoreCase("JavaScript")) {
+        } else if (choice.equalsIgnoreCase("JavaScript")) {
             hero = new JavaScript();
             enemy = OpponentRandomizer.RandomizeOpponentJavaScript();
         } else {
@@ -41,11 +41,37 @@ public class Main {
 
 
         if (arg.equalsIgnoreCase("Syntax")) {
-            if (hero.syntax > enemy.syntax) {
+            if (hero.getSyntax() > enemy.getSyntax()) {
                 System.out.println("You won, congratulations!");
             } else {
                 System.out.println("Sorry, You lost!");
             }
+        } else if (arg.equalsIgnoreCase("Usage")) {
+            if (hero.getUsage() > enemy.getUsage()) {
+                System.out.println("You won, congratulations!");
+            } else {
+                System.out.println("Sorry, You lost!");
+            }
+        } else if (arg.equalsIgnoreCase("Speed")) {
+            if (hero.getSpeed() > enemy.getSpeed()) {
+                System.out.println("You won, congratulations!");
+            } else {
+                System.out.println("Sorry, You lost!");
+            }
+        } else if (arg.equalsIgnoreCase("Simplicity")) {
+            if (hero.getSimplicity() > enemy.getSimplicity()) {
+                System.out.println("You won, congratulations!");
+            } else {
+                System.out.println("Sorry, You lost!");
+            }
+        } else if (arg.equalsIgnoreCase("Security")) {
+            if (hero.getSecurity() > enemy.getSecurity()) {
+                System.out.println("You won, congratulations!");
+            } else {
+                System.out.println("Sorry, You lost!");
+            }
+        } else {
+            throw new Exception("There is no such option!");
         }
     }
 }
