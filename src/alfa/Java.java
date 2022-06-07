@@ -1,6 +1,6 @@
 package alfa;
 
-public class Java extends ProgrammingLanguages {
+public class Java extends alfa.ProgrammingLanguages {
     private int security = 3;
     private int usage = 3;
     private int syntax = 1;

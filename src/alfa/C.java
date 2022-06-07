@@ -1,6 +1,6 @@
 package alfa;
 
-public class C extends ProgrammingLanguages {
+public class C extends alfa.ProgrammingLanguages {
     int security = 1;
     int usage = 4;
     int syntax = 2;

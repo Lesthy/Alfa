@@ -1,6 +1,6 @@
 package alfa;
 
-public class Python extends ProgrammingLanguages {
+public class Python extends alfa.ProgrammingLanguages {
     private int security = 5;
     private int usage = 5;
     private int syntax = 5;

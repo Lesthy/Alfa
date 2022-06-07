@@ -1,6 +1,6 @@
 package alfa;
 
-public class PHP extends ProgrammingLanguages {
+public class PHP extends alfa.ProgrammingLanguages {
     private int security = 2;
     private int usage = 1;
     private int syntax = 3;

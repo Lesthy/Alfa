@@ -1,6 +1,6 @@
 package alfa;
 
-public class JavaScript extends ProgrammingLanguages {
+public class JavaScript extends alfa.ProgrammingLanguages {
     private int security = 4;
     private int usage = 2;
     private int syntax = 4;
