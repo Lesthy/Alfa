@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        Java java = new Java();
-        C c = new C();
-        PHP php = new PHP();
-        Python python = new Python();
-        JavaScript javaScript = new JavaScript();
+
+        ProgrammingLanguages hero;
+
+        ProgrammingLanguages enemy;
+
         Scanner scan = new Scanner(System.in);
 
 
@@ -18,20 +18,34 @@ public class Main {
         String choice = scan.nextLine();
 
         if (choice.equalsIgnoreCase("Java")) {
-            OpponentRandomizer.RandomizeOpponentJava();
+            hero = new Java();
+            enemy = OpponentRandomizer.RandomizeOpponentJava();
         } else if (choice.equalsIgnoreCase("C")) {
-            OpponentRandomizer.RandomizeOpponentC();
+            hero = new C();
+            enemy = OpponentRandomizer.RandomizeOpponentC();
         } else if (choice.equalsIgnoreCase("PHP")) {
-            OpponentRandomizer.RandomizeOpponentPHP();
+            hero = new PHP();
+            enemy = OpponentRandomizer.RandomizeOpponentPHP();
         } else if (choice.equalsIgnoreCase("Python")) {
-            OpponentRandomizer.RandomizeOpponentPython();
+            hero = new Python();
+            enemy = OpponentRandomizer.RandomizeOpponentPython();
         }  else if (choice.equalsIgnoreCase("JavaScript")) {
-            OpponentRandomizer.RandomizeOpponentJavaScript();
+            hero = new JavaScript();
+            enemy = OpponentRandomizer.RandomizeOpponentJavaScript();
         } else {
             throw new Exception("There is no such option!");
         }
 
-        System.out.println("What do you think you're better at? Syntax/Usage/Speed/Security/Simplicity");
+        System.out.println("What do you want to compete with: Syntax/Usage/Speed/Simplicity/Security");
         String arg = scan.nextLine();
+
+
+        if (arg.equalsIgnoreCase("Syntax")) {
+            if (hero.syntax > enemy.syntax) {
+                System.out.println("You won, congratulations!");
+            } else {
+                System.out.println("Sorry, You lost!");
+            }
+        }
     }
 }

@@ -3,96 +3,134 @@ package alfa;
 import java.util.Random;
 
 public class OpponentRandomizer {
-    public static void RandomizeOpponentJava() {
+    public static ProgrammingLanguages RandomizeOpponentJava() {
         Random opp = new Random();
         int opponentJava = opp.nextInt(3);
 
         switch (opponentJava) {
-            case 0:
+            case 0 -> {
                 System.out.println("Your opponent is C");
-                break;
-            case 1:
+                return new C();
+            }
+            case 1 -> {
                 System.out.println("Your opponent is PHP");
-                break;
-            case 2:
+                return new PHP();
+            }
+            case 2 -> {
                 System.out.println("Your opponent is Python");
-                break;
-            case 3:
+                return new Python();
+            }
+            case 3 -> {
                 System.out.println("Your opponent is JavaScript");
-                break;
+                return new JavaScript();
+            }
+            default -> {
+                return null;
+            }
         }
     }
 
-    public static void RandomizeOpponentC() {
+    public static ProgrammingLanguages RandomizeOpponentC() {
         Random opp = new Random();
         int opponentC = opp.nextInt(3);
         switch (opponentC) {
-            case 0:
+            case 0 -> {
                 System.out.println("Your opponent is Java");
-                break;
-            case 1:
+                return new Java();
+            }
+            case 1 -> {
                 System.out.println("Your opponent is PHP");
-                break;
-            case 2:
+                return new PHP();
+            }
+            case 2 -> {
                 System.out.println("Your opponent is Python");
-                break;
-            case 3:
+                return new Python();
+            }
+            case 3 -> {
                 System.out.println("Your opponent is JavaScript");
-                break;
+                return new JavaScript();
+            }
+            default -> {
+                return null;
+            }
         }
     }
-    public static void RandomizeOpponentPHP() {
+
+    public static ProgrammingLanguages RandomizeOpponentPHP() {
         Random opp = new Random();
         int opponentC = opp.nextInt(3);
         switch (opponentC) {
-            case 0:
+            case 0 -> {
                 System.out.println("Your opponent is Java");
-                break;
-            case 1:
+                return new Java();
+            }
+            case 1 -> {
                 System.out.println("Your opponent is C");
-                break;
-            case 2:
+                return new C();
+            }
+            case 2 -> {
                 System.out.println("Your opponent is Python");
-                break;
-            case 3:
+                return new Python();
+            }
+            case 3 -> {
                 System.out.println("Your opponent is JavaScript");
-                break;
+                return new JavaScript();
+            }
+            default -> {
+                return null;
+            }
         }
     }
-    public static void RandomizeOpponentPython() {
+
+    public static ProgrammingLanguages RandomizeOpponentPython() {
         Random opp = new Random();
         int opponentC = opp.nextInt(3);
         switch (opponentC) {
-            case 0:
+            case 0 -> {
                 System.out.println("Your opponent is Java");
-                break;
-            case 1:
+                return new Java();
+            }
+            case 1 -> {
                 System.out.println("Your opponent is PHP");
-                break;
-            case 2:
+                return new PHP();
+            }
+            case 2 -> {
                 System.out.println("Your opponent is C");
-                break;
-            case 3:
+                return new C();
+            }
+            case 3 -> {
                 System.out.println("Your opponent is JavaScript");
-                break;
+                return new JavaScript();
+            }
+            default -> {
+                return null;
+            }
         }
     }
-    public static void RandomizeOpponentJavaScript() {
+
+    public static ProgrammingLanguages RandomizeOpponentJavaScript() {
         Random opp = new Random();
         int opponentC = opp.nextInt(3);
         switch (opponentC) {
-            case 0:
+            case 0 -> {
                 System.out.println("Your opponent is Java");
-                break;
-            case 1:
+                return new Java();
+            }
+            case 1 -> {
                 System.out.println("Your opponent is PHP");
-                break;
-            case 2:
+                return new PHP();
+            }
+            case 2 -> {
                 System.out.println("Your opponent is Python");
-                break;
-            case 3:
+                return new Python();
+            }
+            case 3 -> {
                 System.out.println("Your opponent is C");
-                break;
+                return new C();
+            }
+            default -> {
+                return null;
+            }
         }
     }
 }

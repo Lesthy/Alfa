@@ -1,9 +1,9 @@
 package alfa;
 
 public class C extends ProgrammingLanguages {
-    int safest = 1;
+    int security = 1;
     int usage = 4;
+    int syntax = 2;
+    int speed = 5;
     int simplicity = 2;
-    int fastest = 5;
-    int easiest = 2;
 }

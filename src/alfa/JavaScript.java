@@ -1,9 +1,9 @@
 package alfa;
 
 public class JavaScript extends ProgrammingLanguages {
-    int safest = 4;
+    int security = 4;
     int usage = 2;
-    int simplicity = 4;
-    int easiest = 5;
-    int fastest = 4;
+    int syntax = 4;
+    int simplicity = 5;
+    int speed = 4;
 }
